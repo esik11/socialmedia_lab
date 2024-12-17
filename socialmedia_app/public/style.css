@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    background-color: #f9fafb;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* Post Creation Form */
+.post-form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s;
+}
+
+.post-form textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.post-form button {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.post-form button:hover {
+    background-color: #2563eb;
+}
+
+/* Post Container */
+.post-container {
+    max-width: 900px;
+    margin-top: 40px;
+}
+
+/* Post Cards */
+.post-card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.post-card .content {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.post-card .user {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.post-card .time {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Like Button */
+.post-card .like-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.post-card .like-btn {
+    font-size: 0.875rem;
+    border-radius: 20px;
+    padding: 6px 15px;
+    transition: background-color 0.3s;
+}
+
+.post-card .like-btn:hover {
+    background-color: #f1f5f9;
+}
+
+.post-card .like-btn:focus, .post-card .unlike-btn:focus {
+    outline: none;
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 30px;
+}
+
+.comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.comment-section textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.comment-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+.comment-card:hover {
+    background-color: #e9ecef;
+}
+
+.comment-card .comment-content {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.comment-card .comment-meta {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.comment-card .comment-meta strong {
+    color: #007bff;
+}
+
+/* Form Styling */
+textarea.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    background-color: #f7f7f7;
+}
+
+button.btn {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+}
+
+button.btn-sm {
+    padding: 6px 12px;
+}
+
+textarea.form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+/* Hover Effects */
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* User Interaction Section */
+.like-btn, .unlike-btn {
+    background-color: transparent;
+    border: 1px solid #3b82f6;
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.like-btn:hover, .unlike-btn:hover {
+    background-color: #f1f5f9;
+}
+
+.like-btn:focus, .unlike-btn:focus {
+    outline: none;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .post-card {
+        padding: 15px;
+    }
+    .comment-card {
+        padding: 10px;
+    }
+    .post-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .post-form textarea {
+        height: 100px;
+    }
+}
+
+/* Icons */
+.bi-heart, .bi-heart-fill {
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.btn-outline-primary, .btn-outline-danger {
+    border-radius: 20px;
+    padding: 6px 12px;
+}
